@@ -1,0 +1,18 @@
+@import "normalize.css";
+
+body, header, section, figure, img
+{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300);
+body, html
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
