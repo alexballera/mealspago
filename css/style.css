@@ -1,6 +1,6 @@
 @import "normalize.css";
 
-body, header, section, figure, img
+body, header, section, figure, img, div
 {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body, header, section, figure, img
   font-size: 1em;
 }
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300);
-body, html
+body, html, h1
 {
   margin: 0;
   padding: 0;
@@ -16,3 +16,269 @@ body, html
   font-size: 1em;
   font-weight: 400;
 }
+
+.confirmacion
+{
+  background: #57bbec;
+  background-image: url(../img/grid_background.png);
+  padding: 1em;
+}
+  .confirmacion__header
+  {
+    padding: 0;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+    .confirmacion__header--titulo
+    {
+      color: white;
+      text-align: center;
+      font-size: 2em;
+      font-weight: 400;
+      margin-bottom: .5em;
+    }
+    .confirmacion__datos
+    {
+      width: 60%;    
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+      .confirmacion__datos--datos
+      {
+        flex-grow: 1;
+        font-size: 1.25em;
+        text-align: center;
+        color: grey;   
+        background: white;
+      }
+  .contenedor
+  {
+    width: 80%;  
+    margin: 1em auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .confirmacion__pedido
+  {
+    width: 200px;
+    background: white;
+    flex-grow: 1; 
+  }
+    .pedido__dia
+    {
+      padding-top: 1em;
+    }
+    .pedido__comida
+    {
+      color: grey;
+      font-size: 1.1em;
+      padding: 1em;
+      border-right: 2px solid #38393d;
+    }
+      .pedido__comida--fecha
+      {
+        font-weight: 700;    
+        padding: .1em 0;
+      }
+      .pedido__comida--menu
+      {
+        font-weight: 700;
+        margin-top: .4em;    
+        padding: .1em 0;
+      }
+      .pedido__comida--comida
+      {        
+        padding: .1em 0;
+      }
+      .pedido__comida--delivery
+      {
+        background: #ef6b54;
+        color: white;    
+        padding: .1em 0 .1em .2em;
+        max-width: 90%;
+      }
+  
+.circulo__negro
+{
+  background: #38393d;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  position: relative;
+}
+  .borde__blanco
+  {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 4.4em;
+    height: 4.4em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 3px;
+    left: 1px;    
+  }
+    .borde__blanco--dia
+    {
+      font-size: 3.5em;
+    }
+
+.pago
+{
+  background: #e8e6e7;
+  padding: 1em;  
+}
+  .pago__monto
+  {
+    width: 80%;  
+    margin: 1em auto;
+  }
+  .pago__monto--subtotal,
+  .pago__monto--total
+  {
+    text-align: right;
+    color: grey;
+    font-size: 1.4em;
+    font-weight: 400; 
+  }
+    .subtotal, .total
+    {
+      margin-top: 0.4em;
+      padding: 0.25em 0;
+      background: white;
+    }
+    .pago__monto--subtotal
+    {
+      margin-right: 55%;      
+    }
+    .borde
+    {
+      border-bottom: 2px solid #38393d;
+    }
+    .pago__monto--total
+    {
+      margin-left: 55%;
+    }
+    .pago__monto--subtotal div:last-child
+    {
+      background: #57bbec;
+      color: white;
+    }
+    .pago__monto--total div:last-child
+    {
+      background: #38393d;
+      color: white;
+    }
+    .pago__monto--total div:first-child
+    {
+      margin-top: 0;
+    }
+  .pago__forma
+  {
+    width: 100%;
+    margin: 0 auto;   
+  }
+    .pago__forma--titulo
+    {
+      text-align: center;
+      color: grey;
+      font-size: 1.4em;
+      font-weight: 400;
+    }
+    .pago__forma--flex
+    {
+      width: 100%;
+      margin: 1em auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }           
+      .pago__forma img
+      {
+        width: 8.5em;
+        height: 8.5em;
+        top: 8px;
+        left: 8px;
+        position: relative;
+      }
+      .pago__forma figure
+      {
+        width: 150px;
+        height: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        border-radius: 50%;
+        border: 4px solid #ef6b54;
+        position: relative;
+        display: inline-block;
+        flex-grow: 1; 
+      }
+      .pago__forma .pago__forma--credit
+      {
+        /*border: 4px solid #e8e6e7;*/
+      }
+      .contenedor-boton
+      {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+      }
+      .pago__forma--boton
+      {         
+        margin: 0 auto;                                       
+      }
+      .pago__forma--boton input
+      { 
+        border: none;
+        padding: .8em 1.2em;
+        background: #ef6b54;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 400;
+        color: white;
+        flex-grow: 1; 
+      }
+
+.contactanos
+{
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.6em;
+  font-weight: 400; 
+  text-align: center;
+  border-bottom: 2px solid grey;
+}
+  .contactanos ul
+  {      
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .contactanos a
+  {
+    text-decoration: none;
+    padding: .5em 0;    
+    color: grey;   
+  }
+  .contactanos li
+  {
+    display: inline-block;
+    width: 10em;
+  }
+.footer__logo
+{
+  width: 250px;
+  margin: 3.5em auto;
+  padding: 0;
+}
+  
+
+    
+
