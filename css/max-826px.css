@@ -1,0 +1,25 @@
+@media (max-width: 826px)
+{  
+  .pago__monto--subtotal,
+  .pago__monto--total
+  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pago__monto--total div:first-child
+  {
+    display: none;
+  }
+  .borde
+  {
+    border: 0;
+  }
+  header img
+  {
+    margin-left: 20%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+  }
+}

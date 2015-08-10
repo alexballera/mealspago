@@ -17,15 +17,14 @@ body, html, h1
   font-weight: 400;
 }
  
-}
 header img, 
 footer img
 {
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 header img:hover, 
 footer img:hover
@@ -35,11 +34,11 @@ footer img:hover
   -ms-transform: scale(1.75);
   -o-transform: scale(1.75);
   transform: scale(1.75);
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .logo figure
@@ -98,7 +97,8 @@ footer img:hover
   {
     width: 200px;
     background: white;
-    flex-grow: 0; 
+    flex-grow: 0;
+    margin: 0 .25em; 
   }    
     .pedido__dia
     {
@@ -112,7 +112,11 @@ footer img:hover
       border-right: 2px solid #38393d;
       /*border: 2px solid #38393d;*/
       margin: 1em 0;
-    }    
+    }  
+      .pedido__comida-Viernes
+      {
+        border: none;
+      }  
       .pedido__comida--fecha
       {
         font-weight: 700;    
@@ -361,6 +365,20 @@ footer img:hover
   padding: 0;
 }
   
-
+/*@media (max-width: 1300px)
+{
+  header img
+  {
+    margin-left: 20%;
+    -webkit-transition: .75s;
+    -moz-transition: .75s;
+    -o-transition: .75s;
+    -ms-transition: .75s;
+  }
+  .confirmacion__header--titulo
+  {
+    color: #ff1;
+  }
+}*/
     
 
